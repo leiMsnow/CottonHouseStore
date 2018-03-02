@@ -1,0 +1,13 @@
+{
+	"client": "./client",
+	"svr": "./server",
+	"miniprogramRoot": "./client",
+	"qcloudRoot": "./server",
+	"setting": {
+		"newFeature": true
+	},
+	"appid": "wx45561479cd1e3fdd",
+	"projectname": "CottonHouseStore",
+	"libVersion": "1.9.90",
+	"condition": {}
+}
