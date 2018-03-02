@@ -1,8 +1,12 @@
 {
   "pages": [
     "pages/home/home",
+    "pages/car/car",
+    "pages/my/my",
+    
     "pages/index/index",
-    "pages/addCgi/addCgi"
+    "pages/addCgi/addCgi",
+    "pages/temp/temp"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -12,18 +16,30 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "selectedColor":"#0000ff",
+    "selectedColor": "#d4237a",
     "list": [{
-      "pagePath": "pages/home/home",
-      "selectedIconPath":"",
-      "iconPath":"",
-      "text": "首页"
-    }, {
-      "pagePath": "pages/index/index",
-      "selectedIconPath":"",
-      "iconPath":"",
-      "text": "demo"
-    }]
+        "pagePath": "pages/home/home",
+        "selectedIconPath": "images/nav_home_selected.png",
+        "iconPath": "images/nav_home_normal.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/car/car",
+        "selectedIconPath": "images/nav_car_selected.png",
+        "iconPath": "images/nav_car_normal.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "selectedIconPath": "images/nav_my_selected.png",
+        "iconPath": "images/nav_my_normal.png",
+        "text": "我的"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "demo"
+      }
+    ]
   },
   "debug": true
 }
