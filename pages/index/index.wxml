@@ -1,0 +1,15 @@
+<view class='grid-list'>
+  <view class='grid-item' wx:for='{{myHobbies}}' wx:key='{{item}}'
+    bindtap="{{item.hobbyId === -1 ? 'openHobbies':'openCheckIn' }}"
+    data-hobby="{{item}}"
+    >
+    <block wx:if="{{item.hobbyId === -1}}">
+      <image class="kind-list-img" src="images/ic_add_hobby.png" />
+    </block>
+    <block wx:else>
+      <image  data-hobby="{{item}}" catchtap="checkIn"
+       class="kind-list-img" src="images/ic_checkin_{{item.isCheckIn ? 'selected':'normal'}}.png"/>      
+    </block>
+    <view>{{item.hobbyName}}</view>
+  </view>
+</view>

@@ -1,13 +1,86 @@
 {
-	"client": "./client",
-	"svr": "./server",
-	"miniprogramRoot": "./client",
-	"qcloudRoot": "./server",
+	"description": "项目配置文件。",
 	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
 		"newFeature": true
 	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.90",
 	"appid": "wx45561479cd1e3fdd",
 	"projectname": "CottonHouseStore",
-	"libVersion": "1.9.90",
-	"condition": {}
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": 0,
+					"name": "checkIn",
+					"pathName": "pages/checkIn/checkIn",
+					"query": "params={\"hobbyName\":\"冥想\",\"categoryId\":5,\"hobbyId\":5002,\"isCheckIn\":true}"
+				},
+				{
+					"id": 1,
+					"name": "statistics",
+					"pathName": "pages/statistics/statistics",
+					"query": "params={\"hobbyName\":\"吃早餐\",\"categoryId\":1,\"hobbyId\":1001,\"isCheckIn\":true}"
+				},
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "group",
+					"pathName": "pages/group/group",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "create",
+					"pathName": "pages/note/create/create",
+					"query": "params={\"hobbyName\":\"学英语\",\"categoryId\":3,\"hobbyId\":3002,\"isCheckIn\":false}"
+				},
+				{
+					"id": 5,
+					"name": "sudo",
+					"pathName": "pages/game/sudo/sudo",
+					"query": ""
+				},
+				{
+					"id": 6,
+					"name": "checkIn/list",
+					"pathName": "pages/checkIn/list/list",
+					"query": "params={\"hobbyName\":\"学英语\",\"categoryId\":3,\"hobbyId\":3002,\"isCheckIn\":false}"
+				},
+				{
+					"id": -1,
+					"name": "temp",
+					"pathName": "pages/temp/temp",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "user",
+					"pathName": "pages/user/user",
+					"query": ""
+				}
+			]
+		}
+	}
 }
