@@ -1,0 +1,12 @@
+<view class="container">
+  <view class="userinfo">
+    <text wx:if="{{!hasLogin}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 授权中... </text>
+    <block wx:else>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{welcome}}, {{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view wx:if="{{hasLogin}}" class="button" bindtap='bindViewTap'>
+    <text>{{motto}}</text>
+  </view>
+</view>

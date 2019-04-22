@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/welcome/welcome",   
+    
+    "pages/index/index",
+    "pages/group/group",
+    "pages/user/user",
+
+    "pages/temp/temp"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#d4237a",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "棉花房子小卖部"
+  },
+  "tabBar": {
+    "borderStyle": "black",
+    "backgroundColor": "#fff",
+    "selectedColor": "#d4237a",
+    "color": "#2f4f4f",
+    "list": [{
+        "pagePath": "pages/index/index",
+        "iconPath": "images/nav_home_normal.png",
+        "selectedIconPath": "images/nav_home_selected.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/group/group",
+        "iconPath": "images/nav_car_normal.png",
+        "selectedIconPath": "images/nav_car_selected.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "images/nav_my_normal.png",
+        "selectedIconPath": "images/nav_my_selected.png",
+        "text": "我的"
+      }
+    ]
+  }
+}
